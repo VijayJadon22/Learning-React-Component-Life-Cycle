@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 
 export default class Timer extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       time: 0,
       currentTime: 0,
     };
     this.timer = null;
-    console.log("Inside constructor");
   }
 
   static getDerivedStateFromProps() {
@@ -30,6 +29,7 @@ export default class Timer extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log("Inside shouldComponentUpdate");
+    // return true;
     return nextState.time % 5 === 0;
   }
 
@@ -66,6 +66,7 @@ export default class Timer extends Component {
 
   render() {
     console.log("Inside render");
+
     return (
       <>
         <h1>

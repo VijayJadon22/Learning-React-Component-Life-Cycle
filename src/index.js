@@ -12,9 +12,9 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <App1 />
-    <ErrorBoundary>
+    {/* <ErrorBoundary>
       <ComponentA />
-    </ErrorBoundary>
+    </ErrorBoundary> */}
   </React.StrictMode>
 );
 

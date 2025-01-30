@@ -8,6 +8,7 @@ export default class App1 extends Component {
             timerOn: false,
             mount: true,
         }
+        console.log("inside app1 constructor");
     }
 
     toggleTimer = () => {
